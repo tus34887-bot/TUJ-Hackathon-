@@ -12,7 +12,7 @@
   font-family: cyber;
   src: url("fonts/CyberpunkWaifus.ttf");
 }
-
+  
 #cyberFont {
   font-family: cyber;
   color: black;
@@ -48,7 +48,6 @@
 }
 
 
-
 /* Colors in hex:
   Yellow: DFD72A
   DarK Blue: 095958
@@ -58,72 +57,73 @@
  */
 
 
-body {
+body { 
   font-family: "Roboto", sans-serif;
-  background: radial-gradient(circle at 20% 20%, #9AED64 0%, transparent 40%),
-              linear-gradient(135deg, #DFD72A, #095958, #E0E938);
+  background:
+    radial-gradient(circle at 20% 20%, #9AED64 0%, transparent 40%),
+    linear-gradient(135deg, #DFD72A, #095958, #E0E938);
   color: #2b0034;
-  margin: 15vh 4vw 11vh 6vw;
+  margin: 3vh 4vw 11vh 6vw;
   text-align: left;
 }
 
 body.page-home {
   /* background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 35%, #fbc2eb 100%); */
 }
-
+/* 
 body.page-about {
-  background: radial-gradient(circle at 20% 20%,
-      #a1c4fd 0%,
-      #c2e9fb 45%,
-      #fdfbfb 100%);
-}
+  background: radial-gradient(
+    circle at 20% 20%,
+    #a1c4fd 0%,
+    #c2e9fb 45%,
+    #fdfbfb 100%
+  );
+} */
 
-body.page-services {
+/* body.page-services {
   background: linear-gradient(160deg, #fddb92 0%, #d1fdff 40%, #c6ffdd 100%);
-}
+} */
 
-body.page-clients {
-  background: radial-gradient(circle at 10% 80%,
-      #ffecd2 0%,
-      #fcb69f 40%,
-      #ff9a9e 100%);
-}
+/* body.page-clients {
+  background: radial-gradient(
+    circle at 10% 80%,
+    #ffecd2 0%,
+    #fcb69f 40%,
+    #ff9a9e 100%
+  );
+} */
 
-body.page-contact {
+/* body.page-contact {
   background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 50%, #fefefe 100%);
-}
+} */
 
 body.page-profile {
-  background: radial-gradient(circle at 80% 10%,
-      #f6d365 0%,
-      #fda085 30%,
-      #fbc2eb 100%);
+  background: radial-gradient(
+    circle at 80% 10%,
+    #f6d365 0%,
+    #fda085 30%,
+    #fbc2eb 100%
+  );
 }
 
-body.page-blank {
-  background: radial-gradient(circle at 80% 10%,
-      #f6d365 0%,
-      #fda085 30%,
-      #fbc2eb 100%);
-}
+/* body.page-blank {
+  background: radial-gradient(
+    circle at 80% 10%,
+    #f6d365 0%,
+    #fda085 30%,
+    #fbc2eb 100%
+  );
+} */
 
 #top-bar {
   border-bottom: 4px solid #74c16a;
   padding: 1.1vh 2.3vw 2.7vh 0.7vw;
   background: linear-gradient(90deg, #DFD72A, #E0E938, #095958);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  box-sizing: border-box;
-
-
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
+  
+  position: relative;
+  left: -1.7vw;
 }
-
+/* #EFF8E6*/
 .logo {
   font-family: "Bangers", cursive;
   font-weight: 400;
@@ -141,15 +141,11 @@ body.page-blank {
 
 .nav {
   list-style: square;
+  padding-left: 2vw;
   font-family: "Oswald", sans-serif;
   background: transparent;
   padding-top: 5px;
   padding-bottom: 5px;
-
- 
-  text-align: right; 
-  padding-right: 1.5rem; 
-  padding-left: 1rem;
 }
 
 .nav li {
@@ -158,23 +154,23 @@ body.page-blank {
 }
 
 .nav a {
-  display: inline-block;
-  color: yellow;
-  background-color: black;
-  padding: 0.5vh 1.2vw;
+    display: inline-block;
+    color: yellow;
+    background-color: black;
+    padding: 0.5vh 1.2vw;
 
-  clip-path: polygon(12% 0, 100% 0, 88% 100%, 0% 100%);
-  box-shadow: 0 0 6px #00ff9f;
-  transition: 0.3s;
-  background-clip: padding-box;
-}
+    clip-path: polygon(12% 0, 100% 0, 88% 100%, 0% 100%);
+    box-shadow: 0 0 6px #00ff9f;
+    transition: 0.3s;
+    background-clip: padding-box;
+  }
 
 .nav a:hover {
-  background-color: yellowgreen;
-  color: black;
-  transform: scale(1.3);
-}
-
+    background-color: yellowgreen;
+    color: black;
+    transform: scale(1.3);
+  }
+  
 
 
 h1,
@@ -192,13 +188,13 @@ h3 {
 .title-main {
   font-size: 4.1vw;
   text-transform: none;
-  background-color: rgba(255, 0, 122, 0.25);
+  background-color: #DFD72A;
   text-align: center;
   left: 2.2vw;
 }
 
 .section-title {
-  background-color: rgba(0, 255, 200, 0.3);
+  background-color: #DFD72A;
   text-align: right;
   left: -3.3vw;
 }
@@ -211,17 +207,20 @@ h3 {
   top: -1.9vh;
 }
 
+
+
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'cyber';
   max-width: 63vw;
   line-height: 1.37;
-  border-right: 2px dashed #3a86ff;
+  border-right: 2px solid #62A15A;
   padding-right: 1.9vw;
   color: #2b2d42;
   margin-left: 4.4vw;
   text-align: justify;
   text-indent: 2.7vw;
   word-spacing: 0.28em;
+  background: #EFF8E6;
 }
 
 .intro {
@@ -263,7 +262,6 @@ p {
   left: 4.2vw;
   text-indent: 0.9vw;
 }
-
 .page-image {
   position: relative;
   z-index: 1;
@@ -274,25 +272,28 @@ p {
 .page-image img {
   max-width: 55vw;
   height: auto;
-  border: 5px double #ff006e;
-  box-shadow: 0 0 0 4px #00bbf9;
+  border: 5px double yellowgreen;
+  box-shadow: 0 0 0 4px;
+  background-color: yellow;
 }
 
-.page-image--home {}
+.page-image--home {
+}
 
 .page-image--home img {
   max-width: 60vw;
-  transform: rotate(4deg);
 }
 
-.page-image--services {}
+.page-image--services {
+}
 
 .page-image--services img {
   max-width: 50vw;
   transform: rotate(-6deg);
 }
 
-.page-image--contact {}
+.page-image--contact {
+}
 
 .page-image--contact img {
   max-width: 55vw;
@@ -336,7 +337,6 @@ button:hover {
   background-color: #80ed99;
   color: #370617;
 }
-
 /* .container{
   border: 5px solid black;
     height: 1000px;
@@ -354,6 +354,7 @@ button:hover {
 
 
 #footer-text {
+  font-family: 'cyberFont';
   margin-top: 7vh;
   font-size: 1.3vw;
   color: #111810;
