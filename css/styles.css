@@ -48,6 +48,7 @@
 }
 
 
+
 /* Colors in hex:
   Yellow: DFD72A
   DarK Blue: 095958
@@ -57,14 +58,13 @@
  */
 
 
-/* body { */
-font-family: "Roboto",
-sans-serif;
-background: radial-gradient(circle at 20% 20%, #9AED64 0%, transparent 40%),
-linear-gradient(135deg, #DFD72A, #095958, #E0E938);
-color: #2b0034;
-margin: 3vh 4vw 11vh 6vw;
-text-align: left;
+body {
+  font-family: "Roboto", sans-serif;
+  background: radial-gradient(circle at 20% 20%, #9AED64 0%, transparent 40%),
+              linear-gradient(135deg, #DFD72A, #095958, #E0E938);
+  color: #2b0034;
+  margin: 15vh 4vw 11vh 6vw;
+  text-align: left;
 }
 
 body.page-home {
@@ -111,9 +111,17 @@ body.page-blank {
   border-bottom: 4px solid #74c16a;
   padding: 1.1vh 2.3vw 2.7vh 0.7vw;
   background: linear-gradient(90deg, #DFD72A, #E0E938, #095958);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
 
-  position: relative;
-  left: -1.7vw;
+
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
 }
 
 .logo {
@@ -133,11 +141,15 @@ body.page-blank {
 
 .nav {
   list-style: square;
-  padding-left: 2vw;
   font-family: "Oswald", sans-serif;
   background: transparent;
   padding-top: 5px;
   padding-bottom: 5px;
+
+ 
+  text-align: right; 
+  padding-right: 1.5rem; 
+  padding-left: 1rem;
 }
 
 .nav li {
